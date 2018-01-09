@@ -24,10 +24,7 @@ def calc_sharpe_ratio(returns, period='day', benchmark=None):
 		return np.sqrt(per['hour']) * (np.mean(returns)) / np.std(returns)
 	elif period is 'minute':
 		return np.sqrt(per['minute']) * (np.mean(returns)) / np.std(returns)
-	else:
-		except KeyError:
-			print('Type of period \'{}\' not found'.format(period))
-			raise
+
 	return None
 
 def calc_drawdowns(pnl):

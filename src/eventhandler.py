@@ -133,7 +133,7 @@ class FillEvent(Event):
 		# Calculate commission
 		if commission:
 			self.commission = commission
-		else
+		else:
 			self.commission = self.calculate_commission()
 
 	def calculate_commission(self):

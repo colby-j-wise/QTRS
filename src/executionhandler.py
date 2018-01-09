@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from abc import ABCMeta, abstractmethod
-from event import FillEvent, OrderEvent
+from eventhandler import FillEvent, OrderEvent
 
 import queue
 

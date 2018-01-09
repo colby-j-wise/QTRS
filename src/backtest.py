@@ -30,7 +30,7 @@ class Backtest(object):
 		"""
 		self.csv_dir = csv_dir
 		self.symbol_list = symbol_list
-		self.initial_capital = intial_capital
+		self.initial_capital = initial_capital
 		self.heartbeat = heartbeat
 		self.start_date = start_date
 
@@ -112,7 +112,7 @@ class Backtest(object):
 		
 		print("Creating equity curve...")
 		print(self.portfolio.equity_curve.tail(10))
-		pprint(stats)
+		pprint.pprint(stats)
 		print("Signals: {}".format(self.signals))
 		print("Orders: {}".format(self.orders))
 		print("Fills: {}".format(self.fills))
